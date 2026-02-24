@@ -96,41 +96,41 @@
 
 #define NOBLEMEN		(1<<0)
 
-#define LORD		(1<<0)
-#define LADY		(1<<1)
-#define HAND		(1<<2)
-#define STEWARD		(1<<3)
-#define KNIGHT		(1<<4)
-#define SHERIFF		(1<<5)
-#define BAILIFF		(1<<6)
+#define LORD		(1<<0) //replaces hand as MARNOY. Fusion of 'Mar' and 'Noyan'.
+#define LADY		(1<<1) //to be removed
+#define HAND		(1<<2) //replaces hand as ADVISOR.
+#define STEWARD		(1<<3) //to be removed
+#define KNIGHT		(1<<4) //Slots as a bosyguard figure for the CountHigh-Knygt
+#define SHERIFF		(1<<5) //to be removed
+#define BAILIFF		(1<<6) //to be reworked. Slots as leader of the MAA
 
 #define GARRISON		(1<<1)
 
-#define GUARDSMAN	(1<<0)
-#define MANATARMS	(1<<1)
-#define DUNGEONEER	(1<<2)
-#define GATEMASTER	(1<<3)
-#define VETERAN		(1<<4)
-#define ELDER		(1<<5)
-#define BOGGUARD	(1<<6)
-#define BOGMASTER	(1<<7)
+#define GUARDSMAN	(1<<0) // to be removed
+#define MANATARMS	(1<<1) // to be reworked
+#define DUNGEONEER	(1<<2) // to be renamed as 'Torturer'
+#define GATEMASTER	(1<<3) // to be removed
+#define VETERAN		(1<<4) // to be merged with Elder.
+#define ELDER		(1<<5) // to be merged with Veteran.
+#define BOGMASTER	(1<<6)
+#define BOGGUARD	(1<<7)
 
 #define CHURCHMEN		(1<<2)
 
-#define PRIEST		(1<<0)
-#define PURITAN		(1<<2)
-#define MONK		(1<<3)
+#define PRIEST		(1<<0) // to be reworked
+#define PURITAN		(1<<2) // to be reworked
+#define MONK		(1<<3) // to be merged with 'Confessor'. 
 #define GRAVEDIGGER	(1<<4)
-#define CONFESSOR	(1<<5)
-#define DRUID		(1<<6)
+#define CONFESSOR	(1<<5) // to be merged with 'Monk'. 
+#define DRUID		(1<<6) // to be removed 
 
 #define COURTIERS	(1<<3)
 
-#define JESTER		(1<<0)
+#define JESTER		(1<<0) 
 #define WIZARD		(1<<1)
 #define PHYSICIAN 	(1<<2)
 #define BUTLER		(1<<3)
-#define COUNCILLOR	(1<<4)
+#define COUNCILLOR	(1<<4) 
 
 #define YEOMEN		(1<<4)
 
@@ -145,7 +145,7 @@
 #define SCRIBE		(1<<8)
 #define APOTHECARY	(1<<9)
 
-#define PEASANTS	(1<<5)
+#define PEASANTS	(1<<5) //replace with Terrant, french for 'those of the soil'
 
 #define HUNTER		(1<<0)
 #define FARMER		(1<<1)
@@ -195,13 +195,13 @@
 #define DEATHKNIGHT (1<<1)
 #define SKELETON	(1<<2)
 
-#define JCOLOR_NOBLE "#aa83b9"
+#define JCOLOR_NOBLE "#aa83b9" // replace with C500F0
 #define JCOLOR_COURTIER "#81adc8"
 #define JCOLOR_CHURCH "#c0ba8d"
 #define JCOLOR_SOLDIER "#b18484"
 #define JCOLOR_YEOMAN "#819e82"
-#define JCOLOR_PEASANT "#b09262"
-#define JCOLOR_MERCENARY "#c86e3a"
+#define JCOLOR_PEASANT "#b09262" 
+#define JCOLOR_MERCENARY "#c86e3a" // replace with FF6F00
 
 
 // job display orders //
