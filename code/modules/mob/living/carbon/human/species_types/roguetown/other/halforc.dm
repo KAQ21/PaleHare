@@ -2,19 +2,16 @@
 	race = /datum/species/halforc
 
 /datum/species/halforc
-	name = "Half Orc"
-	id = "halforc"
+	name = "Ork"
+	id = "Ork"
 	desc = "<b>Half Orcs</b><br>\
-	With the Ironmask clan on a centuries-long warpath to consolidate all orcs within their banner, \
-	crushed orc tribes have lost their menfolk and war-widows have been scattered to the hinterlands. \
-	Between human civilization and orc savagery, orc-women opting for exile over dishonor have become \
-	more common visitors to fur trading posts and prospecting camps, eventually leading to half-orcs \
-	being born in these rough places otherwise devoid of a fairer sex. Your mother-clan is in thrall \
-	to the Ironmask, true orcs would kill you as a mongrel dog and your father’s people cannot decide \
-	between mere distrust and disgust. Yet somehow your wandering feet came to Rockhill, where \
-	half-orcs ply muscle and their hardiness in the rough underbelly or outer reaches of society."
+    Having their blood blessed by their daemon-lord centuries ago, \
+	they have forsaken their ancestral ways. Most orks interactions are done with fur trading posts and prospecting camps. \
+	Orks are more sentient than their Ogre kin, who are regarded as more beast-like than like of Maeyr \
+	They smelt metal, traders of the far south and east of the Salt-Silk roads. \
+	In civil lyfe are a common enough sight to not raise an eye, yet rare enough to be weary of."
 
-	skin_tone_wording = "Clan"
+	skin_tone_wording = "Bloodbless"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
