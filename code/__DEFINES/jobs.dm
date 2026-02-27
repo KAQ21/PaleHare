@@ -110,27 +110,27 @@
 #define MANATARMS	(1<<1) // to be reworked
 #define DUNGEONEER	(1<<2) // to be renamed as 'Torturer'
 #define GATEMASTER	(1<<3) // to be removed
-#define VETERAN		(1<<4) // to be merged with Elder.
-#define ELDER		(1<<5) // to be merged with Veteran.
+#define VETERAN		(1<<4) // to be removed
+#define ELDER		(1<<5) // to be reworked as a VETERAN too.
 #define BOGMASTER	(1<<6)
 #define BOGGUARD	(1<<7)
 
 #define CHURCHMEN		(1<<2)
 
-#define PRIEST		(1<<0) // to be reworked
+#define PRIEST		(1<<0) // to be merged with 'Inquisition'.
 #define PURITAN		(1<<2) // to be reworked
-#define MONK		(1<<3) // to be merged with 'Confessor'. 
+#define MONK		(1<<3) // to be removed
 #define GRAVEDIGGER	(1<<4)
-#define CONFESSOR	(1<<5) // to be merged with 'Monk'. 
+#define CONFESSOR	(1<<5) // to be reworked
 #define DRUID		(1<<6) // to be removed 
 
 #define COURTIERS	(1<<3)
 
-#define JESTER		(1<<0) 
-#define WIZARD		(1<<1)
-#define PHYSICIAN 	(1<<2)
-#define BUTLER		(1<<3)
-#define COUNCILLOR	(1<<4) 
+#define JESTER		(1<<0) //
+#define WIZARD		(1<<1) // 
+#define PHYSICIAN 	(1<<2) //
+#define BUTLER		(1<<3) //
+#define COUNCILLOR	(1<<4) // Add subroles for councillor. Taxman, etc etc
 
 #define YEOMEN		(1<<4)
 
