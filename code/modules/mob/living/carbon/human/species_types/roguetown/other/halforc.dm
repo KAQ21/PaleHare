@@ -3,7 +3,7 @@
 
 /datum/species/halforc
 	name = "Ork"
-	id = "Ork"
+	id = "ork"
 	desc = "<b>Half Orcs</b><br>\
     Having their blood blessed by their daemon-lord centuries ago, \
 	they have forsaken their ancestral ways. Most orks interactions are done with fur trading posts and prospecting camps. \
