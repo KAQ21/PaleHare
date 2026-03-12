@@ -96,56 +96,58 @@
 
 #define NOBLEMEN		(1<<0)
 
-#define LORD		(1<<0)
-#define LADY		(1<<1)
-#define HAND		(1<<2)
-#define STEWARD		(1<<3)
-#define KNIGHT		(1<<4)
-#define SHERIFF		(1<<5)
-#define BAILIFF		(1<<6)
+#define LORD		(1<<0) //replaces lord as Overseer. Functions like a major more than a lord. 
+#define LADY		(1<<1) //to be removed
+#define HAND		(1<<2) //replaces hand as ADVISOR.
+#define STEWARD		(1<<3) //to be removed
+#define KNIGHT		(1<<4) //Slots as a bosyguard figure for the CountHigh-Knygt
+#define SHERIFF		(1<<5) //to be removed
+#define BAILIFF		(1<<6) //to be reworked. Slots as leader of the MAA
 
 #define GARRISON		(1<<1)
 
-#define GUARDSMAN	(1<<0)
-#define MANATARMS	(1<<1)
-#define DUNGEONEER	(1<<2)
-#define GATEMASTER	(1<<3)
-#define VETERAN		(1<<4)
-#define ELDER		(1<<5)
-#define BOGGUARD	(1<<6)
-#define BOGMASTER	(1<<7)
+#define GUARDSMAN	(1<<0) // to be removed
+#define MANATARMS	(1<<1) // to be reworked
+#define DUNGEONEER	(1<<2) // to be renamed as 'Torturer'
+#define GATEMASTER	(1<<3) // to be removed
+#define VETERAN		(1<<4) // to be merged with Elder.
+#define ELDER		(1<<5) // to be merged with Veteran.
+#define BOGMASTER	(1<<6)
+#define BOGGUARD	(1<<7)
 
 #define CHURCHMEN		(1<<2)
 
-#define PRIEST		(1<<0)
-#define PURITAN		(1<<2)
-#define MONK		(1<<3)
-#define GRAVEDIGGER	(1<<4)
-#define CONFESSOR	(1<<5)
-#define DRUID		(1<<6)
+#define PRIEST		(1<<0) // renamed to bishop, and faithlocked
+#define PURITAN		(1<<2) // pilgrim role
+#define MONK		(1<<3) // to be merged with 'Confessor'. 
+#define GRAVEDIGGER	(1<<4) 
+#define CONFESSOR	(1<<5) // to be merged with 'Monk'. 
+#define DRUID		(1<<6) // Faithlocked to Eloru
 
-#define COURTIERS	(1<<3)
+#define COURTIERS	(1<<3) 
 
-#define JESTER		(1<<0)
-#define WIZARD		(1<<1)
-#define PHYSICIAN 	(1<<2)
-#define BUTLER		(1<<3)
-#define COUNCILLOR	(1<<4)
+#define JESTER		(1<<0) // removed
+#define WIZARD		(1<<1) // removed
+#define PHYSICIAN 	(1<<2) // removed
+#define BUTLER		(1<<3) // ???
+#define COUNCILLOR	(1<<4) // removed
 
 #define YEOMEN		(1<<4)
 
-#define BARKEEP		(1<<0)
-#define ARCHIVIST	(1<<1)
-#define ARMORSMITH	(1<<2)
-#define WEAPONSMITH (1<<3)
+#define BARKEEP		(1<<0) // renamed to Tapper
+#define ARCHIVIST	(1<<1) // renamed to scribe
+#define ARMORSMITH	(1<<2) // removed
+#define MECHANIC	(1<<2) // new role, simple as that. fixes shit. 
+#define WEAPONSMITH (1<<3) // adds guns to his skill set
 #define ALCHEMIST	(1<<4)
-#define MASON		(1<<5)
+#define HERBALIST	(1<<4)
+#define MASON		(1<<5) 
 #define TAILOR		(1<<6)
 #define MERCHANT	(1<<7)
 #define SCRIBE		(1<<8)
 #define APOTHECARY	(1<<9)
 
-#define PEASANTS	(1<<5)
+#define PEASANTS	(1<<5) // replace with Terrant, french for 'those of the soil'
 
 #define HUNTER		(1<<0)
 #define FARMER		(1<<1)
@@ -159,13 +161,12 @@
 #define BEGGAR		(1<<9)
 #define WENCH		(1<<10)
 #define ADVENTURER	(1<<11)
-#define PILGRIM		(1<<12)
+#define PILGRIM		(1<<12) // renamed to wanderer
 #define VILLAGER	(1<<13)
 #define PRISONER	(1<<14)
 #define LUNATIC		(1<<15)
-#define WAVE_DRIFTER (1<<16)
 
-#define YOUNGFOLK	(1<<6)
+#define YOUNGFOLK	(1<<6) // remove in its entirety
 
 #define APPRENTICE	(1<<0)
 #define CHURCHLING	(1<<1)
@@ -177,31 +178,24 @@
 #define CLERK 		(1<<7)
 #define MAGEAPPRENTICE	(1<<8)
 
-#define MERCENARIES		(1<<7)
+#define MERCENARIES		(1<<7) // add a few more
 
 #define DESERT_RIDER	(1<<0)
 #define GRENZELHOFT		(1<<1)
 
-#define GOBLIN		(1<<8)
-
-#define GOBLINKING	(1<<0)
-#define GOBLINCOOK	(1<<1)
-#define GOBLINGUARD	(1<<2)
-#define GOBLINSMITH	(1<<3)
-
-#define SLOP		(1<<9)
+#define SLOP		(1<<9) // add sloppy toppy
 
 #define TESTER		(1<<0)
 #define DEATHKNIGHT (1<<1)
 #define SKELETON	(1<<2)
 
-#define JCOLOR_NOBLE "#aa83b9"
-#define JCOLOR_COURTIER "#81adc8"
-#define JCOLOR_CHURCH "#c0ba8d"
-#define JCOLOR_SOLDIER "#b18484"
-#define JCOLOR_YEOMAN "#819e82"
-#define JCOLOR_PEASANT "#b09262"
-#define JCOLOR_MERCENARY "#c86e3a"
+#define JCOLOR_NOBLE "#A06695"
+#define JCOLOR_COURTIER "#637ACC"
+#define JCOLOR_CHURCH "#BFAB54"
+#define JCOLOR_SOLDIER "#B2586D"
+#define JCOLOR_YEOMAN "#58896A"
+#define JCOLOR_PEASANT "#AD823C"
+#define JCOLOR_MERCENARY "#AD5C26"
 
 
 // job display orders //
@@ -279,8 +273,3 @@
 
 #define JDO_PRISONER 35
 #define JDO_LUNATIC 35.1
-
-#define JDO_GOBLINKING 36
-#define JDO_GOBLINCOOK 37
-#define JDO_GOBLINGUARD 38
-#define JDO_GOBLINSMITH 39
